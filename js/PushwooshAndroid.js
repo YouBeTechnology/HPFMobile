@@ -45,20 +45,20 @@ function registerPushwooshAndroid() {
 	pushNotification.onDeviceReady({ projectid: "1093377271937", appid : "6FD35-93BC3" });
 
 	//register for push notifications
-	pushNotification.registerDevice(
-		function(token)
-		{
-			alert(token);
+	//pushNotification.registerDevice(
+		//function(token)
+		//{
+			//alert(token);
 			//callback when pushwoosh is ready
-			onPushwooshAndroidInitialized(token);
-		},
-		function(status)
-		{
-			alert("failed to register: " +  status);
-		    console.warn(JSON.stringify(['failed to register ', status]));
-		}
-	);
-}
+			//onPushwooshAndroidInitialized(token);
+		//},
+		//function(status)
+		//{
+			//alert("failed to register: " +  status);
+		   // console.warn(JSON.stringify(['failed to register ', status]));
+		//}
+	//);
+//}
 
 function onPushwooshAndroidInitialized(pushToken)
 {
